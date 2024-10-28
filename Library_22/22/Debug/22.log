@@ -1,0 +1,8 @@
+﻿  Source.cpp
+  22.cpp
+e:\oap\library_22\library_22\22.h(1): warning C4068: неизвестная директива pragma
+e:\oap\library_22\22\22.cpp(7): warning C4326: возвращаемый тип "main" должен быть "int", а не "void"
+e:\oap\library_22\22\22.cpp(12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Создание кода...
+  LINK : не найден или не выполнена сборка E:\OAP\Library_22\Debug\22.exe при последней инкрементной компоновке; выполняется полная компоновка
+  22.vcxproj -> E:\OAP\Library_22\Debug\22.exe

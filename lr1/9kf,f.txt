@@ -1,0 +1,31 @@
+#include <fstream>
+#include <iostream>
+#include <string>
+#include <Windows.h>
+using namespace std;
+int main()
+{
+	SetConsoleCP(1251);
+	SetConsoleOutputCP(1251);
+	ofstream ofs("H:\\Noon.txt");
+	ofs << " Lorem ipsum dolor sit amet, cons;ectetur adi;piscing elit, sed do eiusmod tem-por incididunt ut labore et dolore magna aliqua. ";
+	ofs.close();
+	ifstream ifs("H:\\Noon.txt");
+	if (!ifs.is_open())
+	{
+		cerr << "File not found" << endl;
+		return 1;
+	}
+	string s;
+	std:: string to_delete {'.'};
+	getline(ifs, s, '\"');
+	cout << s;
+	system("pause");
+	size_t start{ s.find(to_delete) };
+	while (start != string::npos) // 
+	{
+		s.erase(start, to_delete.length());
+		start = s.find(to_delete, start + to_delete.length());
+	}
+	cout << s << endl;
+}
